@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MAXELEC</title>  
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="icon" type="image/png" href="../images/logo_img.png" />
+  </head>
+
+  <body>
+      <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html"><img src="../images/logo_text.png" width="30"> MaxElec</a>
+      <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+                <a class="nav-link" href="../login.html">Cerrar Sesión</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+              <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html">
+                          <span data-feather="home"></span>
+                          Reclamos asignados<span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="manuales.html">
+                          <span data-feather="home"></span>
+                          Manuales
+                      </a>
+                    </li>
+                </ul>
+
+                
+              </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <br>     
+          
+          <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Reclamo 235678F</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="Juan Alfonso" readonly="readonly">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" value="Rojas" readonly="readonly">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Correo electrónico</label>
+            <input type="text" class="form-control" placeholder="" value="juanrojas@gmail.com" readonly="readonly">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Teléfono</label>
+            <input type="text" class="form-control" placeholder="" value="3624152861" readonly="readonly">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="address">Dirección</label>
+          <input type="text" class="form-control" id="address" value="Lopez y Planes 589" readonly="readonly">
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="country">Provincia</label>
+            <input type="text" class="form-control" value="Chaco" readonly="readonly">
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="state">Ciudad</label>
+             <input type="text" class="form-control" value="Resistencia" readonly="readonly">
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="country">Producto</label>
+             <input type="text" class="form-control" value="Anafe" readonly="readonly">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Tipo</label>
+            <input type="text" class="form-control" value="A gas" readonly="readonly">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Modelo</label>
+            <input type="text" class="form-control" value="TGNC050RH" readonly="readonly">
+          </div>
+        </div>
+        <div class="row">
+          
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="firstName">Descripción del problema</label>
+            <textarea class="form-control" readonly="readonly" rows="3">Fallo en el regulador lo que genera una pérdida a la hora de realizar la conexión. Cambiar regulador e instalar correctamente</textarea>
+          </div>
+        </div>
+         <div class="row">
+          <div class="col-md-1 mb-3">
+            <label for="firstName">Estado</label>
+          </div>
+          <div class="col-md-3 mb-3">
+           <select class="custom-select d-block w-100" id="modelo" required>
+                            <option>En Proceso</option>
+                            <option>Pendiente</option>
+                            <option>Finalizado</option>
+                        </select>
+          </div>
+        </div>
+    
+        <div class="row center-block">
+        <div class="col-md-12 mb-3 text-center">
+          <input type="button" onclick=" location.href='detallellamada.html' " value="Atrás" class="btn btn-secondary center-block">&nbsp;&nbsp;&nbsp;&nbsp;
+           <input type="button" onclick=" location.href='informefin.html' " value="Guardar cambios" class="btn btn-outline-secondary center-block">
+        </div>
+        </div>
+
+      </main>
+       
+    </div>
+<footer class="footer mt-auto py-3">
+        <div class="container text-center">
+          <span class="text-muted">Diseñado por RISE Software Inc. - © 2019</span>
+       </div>
+    </footer>
+    </div>
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
