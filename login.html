@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>MAXELEC</title>	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/singin.css">
+	<link rel="icon" type="image/png" href="images/logo_img.png" />
+	</head>
+  <SCRIPT  language=JavaScript> 
+    function Login(){ 
+      var usuario=document.login.usuario.value; 
+      var password=document.login.password.value; 
+      if (usuario=="gerente" && password==12345) { 
+        window.location="gerente/index.html"; 
+      } 
+      if (usuario=="comercializacion" && password==12345) { 
+        window.location="comercia/index.html"; 
+      } 
+      if (usuario=="postventa" && password==12345) { 
+        window.location="postventa/index.html"; 
+      } 
+      if (usuario=="tecnico" && password==12345) { 
+        window.location="tecnico/index.html"; 
+      } 
+      if (usuario=="produccion" && password==12345) { 
+        window.location="produccion/index.html"; 
+      } 
+      if (usuario=="" || password=="") { 
+        alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+      } 
+    } 
+  </SCRIPT> 
+	<body class="text-center">
+    	<form name="login" class="form-signin">
+    		<img class="mb-4" src="images/logo_img.png" alt="" width="72" height="72">
+  			<h1 class="h3 mb-3 font-weight-normal">MAXELEC</h1>
+  			<label for="inputEmail" class="sr-only">Usuario</label>
+  			<input name="usuario" type="text" class="form-control" placeholder="Usuario" required autofocus>
+  			<label for="inputPassword" class="sr-only">Contraseña</label>
+  			<input name="password" type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+  			<div class="checkbox mb-3">
+    		<label>
+      		<input type="checkbox" value="remember-me"> Recordar usuario
+    		</label>
+  			</div>
+        <input value="Ingresar" target="_parent" onclick="Login()" type="button" class="btn btn-lg btn-secondary btn-block">
+		</form>
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
