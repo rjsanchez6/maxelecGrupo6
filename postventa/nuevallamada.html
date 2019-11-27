@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MAXELEC</title>  
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="icon" type="image/png" href="../images/logo_img.png" />
+  </head>
+
+  <body>
+      <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html"><img src="../images/logo_text.png" width="30"> MaxElec</a>
+      <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+                <a class="nav-link" href="../login.html">Cerrar Sesión</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+              <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="index.html">
+                          <span data-feather="home"></span>
+                          Listado de reclamos <span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="reclamosweb.html">
+                          <span data-feather="file"></span>
+                          Reclamos web
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tecnicos.html">
+                          <span data-feather="shopping-cart"></span>
+                          Técnicos
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="manuales.html">
+                          <span data-feather="file"></span>
+                          Manuales
+                      </a>
+                    </li>
+                </ul>
+
+                
+              </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <br>     
+          
+          <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Nuevo reclamo</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Correo electrónico</label>
+            <input type="text" class="form-control" placeholder="" value="" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Teléfono</label>
+            <input type="text" class="form-control" placeholder="" value="" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="address">Dirección</label>
+          <input type="text" class="form-control" id="address" placeholder="" required>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="country">Provincia</label>
+            <select class="custom-select d-block w-100" id="provincia" required>
+                            <option>Chaco</option>
+                            <option>Corrientes</option>
+                            <option>Formosa</option>
+                            <option>Misiones</option>
+                        </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="state">Ciudad</label>
+            <select class="custom-select d-block w-100" id="ciudad" required>
+                            <option>Resistencia</option>
+                            <option>Sáenz Peña</option>
+                            <option>Barranqueras</option>
+                            <option>Fontana</option>
+                        </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="country">Producto</label>
+            <select class="custom-select d-block w-100" id="producto" required>
+                            <option>Termotanque</option>
+                            <option>Anafe</option>
+                        </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Tipo</label>
+            <select class="custom-select d-block w-100" id="tipo" required>
+                            <option>Eléctrico</option>
+                            <option>A gas</option>
+                        </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Modelo</label>
+            <select class="custom-select d-block w-100" id="modelo" required>
+                            <option>H1235JL</option>
+                            <option>SL856</option>
+                            <option>FR8200</option>
+                            <option>RL3500-S</option>
+                        </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Comercio donde se adquirió</label>
+            <input type="text" class="form-control" placeholder="" value="" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Fecha de compra</label>
+            <input type="date" class="form-control" placeholder="" value="" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="firstName">Descripción del problema</label>
+            <textarea class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 mb-3">
+            <label for="firstName">Derivada en</label>
+          </div>
+          <div class="col-md-3 mb-3">
+            <select class="custom-select d-block w-100" id="status" required>
+                            <option>Reclamo</option>
+                            <option>Solución</option>
+                        </select>
+          </div>
+        </div>
+        <div class="row center-block">
+        <div class="col-md-12 mb-3 text-center">
+          <input type="button" onclick=" location.href='index.html' " value="Agregar" class="btn btn-outline-secondary center-block">
+        </div>
+        </div>      
+      </main>
+    </div>
+<footer class="footer mt-auto py-3">
+        <div class="container text-center">
+          <span class="text-muted">Diseñado por RISE Software Inc. - © 2019</span>
+       </div>
+    </footer>
+    </div>
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

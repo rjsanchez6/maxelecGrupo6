@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>MAXELEC</title>  
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="icon" type="image/png" href="../images/logo_img.png" />
+  </head>
+
+  <body>
+      <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html"><img src="../images/logo_text.png" width="30"> MaxElec</a>
+      <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+                <a class="nav-link" href="../login.html">Cerrar Sesión</a>
+          </li>
+      </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+              <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">
+                          <span data-feather="home"></span>
+                          Listado de reclamos 
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="reclamosweb.html">
+                          <span data-feather="file"></span>
+                          Reclamos web<span class="sr-only">(current)</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="tecnicos.html">
+                          <span data-feather="shopping-cart"></span>
+                          Técnicos
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="manuales.html">
+                          <span data-feather="file"></span>
+                          Manuales
+                      </a>
+                    </li>
+                </ul>
+
+                
+              </div>
+          </nav>
+
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+          <br>     
+          
+          <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Reclamo web #2187</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="Lucas Esteban" readonly="readonly">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" value="Barrios" readonly="readonly">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Correo electrónico</label>
+            <input type="text" class="form-control" placeholder="" value="lucasbarrios77@gmail.com" readonly="readonly">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Teléfono</label>
+            <input type="text" class="form-control" placeholder="" value="3624152861" readonly="readonly">
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="address">Dirección</label>
+          <input type="text" class="form-control" id="address" value="Lopez y Planes 589" readonly="readonly">
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="country">Provincia</label>
+            <input type="text" class="form-control" value="Chaco" readonly="readonly">
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="state">Ciudad</label>
+             <input type="text" class="form-control" value="Resistencia" readonly="readonly">
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="country">Producto</label>
+             <input type="text" class="form-control" value="Termotanque" readonly="readonly">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Tipo</label>
+            <input type="text" class="form-control" value="Eléctrico" readonly="readonly">
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">Modelo</label>
+            <input type="text" class="form-control" value="FG2587L" readonly="readonly">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">Comercio donde se adquirió</label>
+            <input type="text" class="form-control" value="Musimundo" readonly="readonly">
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Fecha de compra</label>
+            <input type="text" class="form-control" value="25/05/2019" readonly="readonly">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="firstName">Descripción del problema</label>
+            <textarea class="form-control" readonly="readonly" rows="6">El termotanque no tiene presión de agua caliente a la salida y me doy con que la válvula de seguridad es para una cierta presión de agua. Lo que quiere decir que la falta de presión es a la entrada (agua fría) principalmente. Le saque la válvula de seguridad y lo conecte directo a la alimentación de agua fría y funciona a la perfección (sin estar enchufado) ahora mi pregunta es. Si o si la válvula se seguridad debe estar conectada o afecta en algo que esté conectado directamente sin esa válvula?</textarea>
+          </div>
+        </div>
+    
+        <div class="row center-block">
+        <div class="col-md-12 mb-3 text-center">
+          <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#Modal">Derivar
+          </button>&nbsp;&nbsp;&nbsp;&nbsp;
+           <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#Modal2">Solucionado
+          </button>
+        </div>
+        </div>
+
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Derivar consulta</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ¿Desea derivar la consulta a un técnico?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <input type="button" onclick=" location.href='asignartec.html' " value="Derivar" class="btn btn-outline-secondary center-block">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLabel">Marcar consulta como solucionada</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       ¿Desea marcar la consulta como solucionada?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <input type="button" onclick=" location.href='reclamosweb.html' " value="Solucionado" class="btn btn-outline-secondary center-block">
+      </div>
+    </div>
+  </div>
+</div>
+
+      </main>
+       
+    </div>
+<footer class="footer mt-auto py-3">
+        <div class="container text-center">
+          <span class="text-muted">Diseñado por RISE Software Inc. - © 2019</span>
+       </div>
+    </footer>
+    </div>
+    
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
